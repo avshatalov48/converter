@@ -34,4 +34,5 @@
 ![Preview](description/registry.png "Реестр")
 
 P.S. Выложил на GitHub для истории и возможно кто-то ей ещё воспользуется :thumbsup:
+
 P.S.S. Первоначальное название программы "megagis" :smile:
