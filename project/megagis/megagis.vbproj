@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9505047F-056B-4A7C-AEE4-FA80798D3817}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>converter.My.MyApplication</StartupObject>
+    <RootNamespace>converter</RootNamespace>
+    <AssemblyName>converter</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <ApplicationIcon>02.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>converter.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>converter.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.Compatibility" />
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="converter.Designer.vb">
+      <DependentUpon>converter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="converter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="options_form.Designer.vb">
+      <DependentUpon>options_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="options_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rescue.Designer.vb">
+      <DependentUpon>rescue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rescue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rescue_copy.Designer.vb">
+      <DependentUpon>rescue_copy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rescue_copy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zoom_form.Designer.vb">
+      <DependentUpon>zoom_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zoom_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="converter.resx">
+      <DependentUpon>converter.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="options_form.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>options_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rescue.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>rescue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rescue_copy.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>rescue_copy.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zoom_form.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>zoom_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zoom_form.ru-RU.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>zoom_form.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="02.ico" />
+    <None Include="Resources\saveHS.png" />
+    <None Include="Resources\RepeatHS.gif" />
+    <None Include="Resources\PasteHS.gif" />
+    <None Include="Resources\DataContainer_MoveNextHS.gif" />
+    <None Include="Resources\PlayHS.gif" />
+    <None Include="Resources\CopyHS.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
